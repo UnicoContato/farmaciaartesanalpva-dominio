@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Farmácia Artesanal em Primavera do Leste. Fórmulas manipuladas, cosméticos, perfumaria e atendimento personalizado para cuidar da sua saúde.">
+  <meta name="keywords" content="farmácia de manipulação, medicamentos manipulados, Farmácia Artesanal, Primavera do Leste, cosméticos, perfumaria">
+  <meta name="author" content="Pva Manipulação de Fórmulas Farmacêuticas LTDA">
+  <meta name="theme-color" content="#005f59">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:url" content="https://farmaciaartesanalpva.com.br/">
+  <meta property="og:title" content="Farmácia Artesanal | Primavera do Leste">
+  <meta property="og:description" content="Cuidado personalizado, qualidade e confiança para a sua saúde e bem-estar.">
+  <meta property="og:image" content="https://farmaciaartesanalpva.com.br/img/7.jpeg">
+  <meta property="og:image:alt" content="Fachada da Farmácia Artesanal em Primavera do Leste">
+  <title>Farmácia Artesanal | Primavera do Leste</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            artesanal: {
+              deep: '#004c48',
+              DEFAULT: '#007f76',
+              light: '#35c9c2',
+              lime: '#9cc52b',
+              orange: '#f58220',
+              cream: '#f4f7f2'
+            }
+          },
+          fontFamily: {
+            display: ['Manrope', 'sans-serif'],
+            body: ['DM Sans', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-artesanal-cream font-body text-slate-800 antialiased">
+  <header id="header" class="fixed inset-x-0 top-0 z-50 transition-transform duration-500">
+    <div class="mx-auto mt-3 w-[calc(100%-1.5rem)] max-w-7xl rounded-2xl border border-white/30 bg-artesanal-deep/80 px-4 shadow-2xl shadow-black/10 backdrop-blur-xl sm:px-6">
+      <div class="flex h-[72px] items-center justify-between">
+        <a href="#inicio" class="group flex items-center gap-3" aria-label="Farmácia Artesanal - Início">
+          <span class="brand-symbol" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="leading-none text-white">
+            <span class="block text-[10px] font-semibold uppercase tracking-[0.32em] text-white/75">Farmácia</span>
+            <span class="font-display text-xl font-extrabold tracking-wide sm:text-2xl">ARTESANAL</span>
+          </span>
+        </a>
+        <nav class="hidden items-center gap-7 lg:flex" aria-label="Navegação principal">
+          <a class="nav-link" href="#inicio">Início</a>
+          <a class="nav-link" href="#sobre">Sobre nós</a>
+          <a class="nav-link" href="#servicos">Serviços</a>
+          <a class="nav-link" href="#galeria">Galeria</a>
+          <a class="nav-link" href="#contato">Contato</a>
+        </nav>
+        <a class="whatsapp-button hidden lg:inline-flex" href="https://wa.me/553198094350?text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20um%20pedido." target="_blank" rel="noopener noreferrer">
+          <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          Peça pelo WhatsApp
+        </a>
+        <button id="menuToggle" class="flex h-11 w-11 items-center justify-center rounded-xl border border-white/15 text-white lg:hidden" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span class="hamburger"><i></i><i></i><i></i></span>
+        </button>
+      </div>
+      <div id="mobileMenu" class="mobile-menu lg:hidden" aria-hidden="true">
+        <nav class="flex flex-col gap-1 border-t border-white/10 py-4" aria-label="Navegação mobile">
+          <a href="#inicio">Início</a>
+          <a href="#sobre">Sobre nós</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#galeria">Galeria</a>
+          <a href="#contato">Contato</a>
+          <a class="mt-3 flex items-center justify-center gap-2 rounded-xl bg-artesanal-orange px-4 py-3 font-bold text-white" href="https://wa.me/553198094350?text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20um%20pedido." target="_blank" rel="noopener noreferrer">Peça pelo WhatsApp</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero relative flex min-h-screen items-end overflow-hidden pb-16 pt-32 lg:items-center lg:pb-0">
+      <div class="hero-orb hero-orb-one"></div>
+      <div class="hero-orb hero-orb-two"></div>
+      <div class="relative z-10 mx-auto w-full max-w-7xl px-6 py-8 lg:px-8">
+        <div class="max-w-3xl">
+          <div class="reveal inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-2 text-sm font-semibold text-white backdrop-blur-lg">
+            <span class="h-2 w-2 animate-pulse rounded-full bg-artesanal-lime"></span>
+            Cuidado personalizado em Primavera do Leste
+          </div>
+          <h1 class="reveal mt-7 font-display text-5xl font-extrabold leading-[0.98] tracking-tight text-white sm:text-6xl lg:text-8xl">
+            Sua saúde,<br><span class="text-gradient">nossa fórmula.</span>
+          </h1>
+          <p class="reveal mt-7 max-w-2xl text-lg leading-relaxed text-white/85 sm:text-xl">Fórmulas exclusivas, qualidade em cada detalhe e um atendimento que entende o que você precisa.</p>
+          <div class="reveal mt-9 flex flex-col gap-3 sm:flex-row">
+            <a class="cta-primary" href="https://wa.me/553198094350?text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20um%20pedido." target="_blank" rel="noopener noreferrer">
+              Faça seu pedido
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="cta-secondary" href="#sobre">Conheça nossa história</a>
+          </div>
+        </div>
+        <div class="reveal mt-12 grid max-w-2xl grid-cols-3 gap-2 sm:gap-4 lg:absolute lg:-bottom-12 lg:right-8 lg:w-[560px]">
+          <div class="metric-card"><strong>+40</strong><span>anos de tradição da rede</span></div>
+          <div class="metric-card"><strong>2+</strong><span>anos em Primavera do Leste</span></div>
+          <div class="metric-card"><strong>100%</strong><span>cuidado personalizado</span></div>
+        </div>
+      </div>
+      <a href="#sobre" class="scroll-indicator" aria-label="Rolar para Sobre nós"><span></span></a>
+    </section>
+
+    <section id="sobre" class="section-space relative overflow-hidden bg-white">
+      <div class="decor-circle decor-circle-one"></div>
+      <div class="mx-auto grid max-w-7xl items-center gap-14 px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
+        <div class="reveal relative mx-auto w-full max-w-xl">
+          <div class="image-frame">
+            <img src="img/7.jpeg" alt="Farmácia Artesanal Primavera do Leste" loading="lazy">
+          </div>
+          <div class="floating-note">
+            <span class="flex h-11 w-11 items-center justify-center rounded-full bg-artesanal-lime/20 text-artesanal-deep">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-4.35-7-11a4 4 0 017-2.65A4 4 0 0119 10c0 6.65-7 11-7 11z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span><strong class="block font-display text-artesanal-deep">Feito para você</strong><small class="text-slate-500">Cuidado em cada fórmula</small></span>
+          </div>
+        </div>
+        <div class="reveal">
+          <span class="eyebrow">Sobre nós</span>
+          <h2 class="section-title">Tradição que encontra <span>o cuidado de perto.</span></h2>
+          <div class="mt-7 space-y-4 text-base leading-8 text-slate-600 sm:text-lg">
+            <p>Há mais de 2 anos cuidando da saúde de Primavera do Leste com qualidade e confiança.</p>
+            <p>Somos uma unidade da Farmácia Artesanal, uma das maiores e mais tradicionais redes de farmácias de manipulação do Brasil, com mais de 40 anos de experiência no mercado magistral.</p>
+            <p>Nosso compromisso é oferecer fórmulas manipuladas com excelência, segurança, qualidade e preço justo, sempre respeitando as necessidades individuais de cada paciente.</p>
+            <p>Trabalhamos com matérias-primas de alta qualidade, rigoroso controle em todas as etapas da manipulação e uma equipe capacitada para atender médicos, nutricionistas, dentistas e pacientes com responsabilidade e atenção.</p>
+            <p>Acreditamos que cada tratamento é único. Por isso, unimos tradição, atendimento personalizado, tecnologia e inovação para proporcionar mais saúde, bem-estar e qualidade de vida.</p>
+          </div>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <span class="quality-pill">Qualidade</span><span class="quality-pill">Segurança</span><span class="quality-pill">Confiança</span><span class="quality-pill">Inovação</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos" class="section-space service-bg relative overflow-hidden">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="reveal mx-auto max-w-3xl text-center">
+          <span class="eyebrow eyebrow-light">Nossas especialidades</span>
+          <h2 class="section-title text-white">Soluções para cuidar de você <span>por inteiro.</span></h2>
+          <p class="mt-5 text-lg text-white/70">Ciência, atenção e um olhar humano em cada etapa do seu cuidado.</p>
+        </div>
+        <div class="mt-14 grid gap-5 md:grid-cols-3">
+          <article class="service-card reveal">
+            <span class="service-icon">
+              <svg class="mx-auto mb-4 h-12 w-12 text-artesanal-orange" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><g fill="currentColor"><path fill="none" d="M0 0H24V24H0z"/><path d="M19 2v2h-2v3c1.657 0 3 1.343 3 3v11c0 .552-.448 1-1 1H5c-.552 0-1-.448-1-1V10c0-1.657 1.343-3 3-3V4H5V2h14zm-2 7H7c-.552 0-1 .448-1 1v10h12V10c0-.552-.448-1-1-1zm-4 2v2h2v2h-2.001L13 17h-2l-.001-2H9v-2h2v-2h2zm2-7H9v3h6V4z"/></g></svg>
+            </span>
+            <span class="card-number">01</span>
+            <h3>Medicamentos manipulados</h3>
+            <p>Fórmulas desenvolvidas conforme prescrição, com matérias-primas selecionadas e rigoroso controle de qualidade.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-icon">
+              <svg class="mx-auto mb-4 h-12 w-12 text-artesanal-orange" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 442 442" aria-hidden="true"><g><path d="M231.5,50.5c0-5.79-4.71-10.5-10.5-10.5c-5.79,0-10.5,4.71-10.5,10.5S215.21,61,221,61C226.79,61,231.5,56.29,231.5,50.5z"/><path d="M346,163.682h-60V122c0-5.522-4.478-10-10-10h-10V10c0-5.523-4.478-10-10-10h-70c-5.523,0-10,4.477-10,10v102h-10c-5.523,0-10,4.478-10,10v41.682H96c-11.028,0-20,8.972-20,20V422c0,11.028,8.972,20,20,20h250c11.028,0,20-8.972,20-20V183.682C366,172.653,357.028,163.682,346,163.682z M196,20h50v92h-50V20z M96,422V183.682h70c5.523,0,10-4.477,10-10V132h35v71.682h-85c-5.523,0-10,4.478-10,10V392c0,5.522,4.477,10,10,10h190c5.522,0,10-4.478,10-10v-60.892c0-5.522-4.478-10-10-10s-10,4.478-10,10V382H136V223.682h75V352c0,5.522,4.477,10,10,10c5.523,0,10-4.478,10-10V223.682h75V297c0,5.522,4.478,10,10,10s10-4.478,10-10v-83.318c0-5.522-4.478-10-10-10h-85V132h35v41.682c0,5.523,4.478,10,10,10h70L346.002,422H96z"/></g></svg>
+            </span>
+            <span class="card-number">02</span>
+            <h3>Cosméticos e perfumaria</h3>
+            <p>Cuidados para pele, cabelos e bem-estar, com opções pensadas para diferentes rotinas e necessidades.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-icon">
+              <svg class="mx-auto mb-4 h-12 w-12 text-artesanal-orange" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="10" cy="6" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M19 2C19 2 21 3.2 21 6C21 8.8 19 10 19 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M17 4C17 4 18 4.6 18 6C18 7.4 17 8 17 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M17.9975 18C18 17.8358 18 17.669 18 17.5C18 15.0147 14.4183 13 10 13C5.58172 13 2 15.0147 2 17.5C2 19.9853 2 22 10 22C12.231 22 13.8398 21.8433 15 21.5634" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </span>
+            <span class="card-number">03</span>
+            <h3>Atendimento personalizado</h3>
+            <p>Orientação acolhedora e próxima para encontrar a solução mais adequada ao seu tratamento e estilo de vida.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria" class="section-space bg-artesanal-cream">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="reveal flex flex-col justify-between gap-6 md:flex-row md:items-end">
+          <div class="max-w-2xl">
+            <span class="eyebrow">Nosso espaço</span>
+            <h2 class="section-title">Um ambiente feito para <span>receber e cuidar.</span></h2>
+          </div>
+          <p class="max-w-md text-slate-600">Conheça de perto nossa unidade, produtos e o cuidado presente em cada detalhe.</p>
+        </div>
+        <div class="gallery-grid mt-12">
+          <button class="gallery-item gallery-wide reveal" type="button" data-image="img/6.jpeg" data-alt="Fachada da Farmácia Artesanal"><img src="img/6.jpeg" alt="Fachada da Farmácia Artesanal" loading="lazy"><span>Conheça nossa unidade</span></button>
+          <button class="gallery-item gallery-tall reveal" type="button" data-image="img/2.jpeg" data-alt="Produtos para proteção e cuidado com a pele"><img src="img/2.jpeg" alt="Produtos para proteção e cuidado com a pele" loading="lazy"><span>Cuidado para a pele</span></button>
+          <button class="gallery-item reveal" type="button" data-image="img/3.jpeg" data-alt="Produtos para cuidado capilar"><img src="img/3.jpeg" alt="Produtos para cuidado capilar" loading="lazy"><span>Saúde capilar</span></button>
+          <button class="gallery-item reveal" type="button" data-image="img/1.jpeg" data-alt="Exposição de produtos da Farmácia Artesanal"><img src="img/1.jpeg" alt="Exposição de produtos da Farmácia Artesanal" loading="lazy"><span>Variedade para você</span></button>
+          <button class="gallery-item gallery-wide reveal" type="button" data-image="img/5.jpeg" data-alt="Produtos personalizados da Farmácia Artesanal"><img src="img/5.jpeg" alt="Produtos personalizados da Farmácia Artesanal" loading="lazy"><span>Cuidado personalizado</span></button>
+          <button class="gallery-item reveal" type="button" data-image="img/4.jpeg" data-alt="Recepção da Farmácia Artesanal"><img src="img/4.jpeg" alt="Recepção da Farmácia Artesanal" loading="lazy"><span>Atendimento acolhedor</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-4 pb-6 sm:px-6">
+      <div class="reveal mx-auto max-w-7xl overflow-hidden rounded-[2rem] bg-artesanal-orange px-6 py-12 text-white shadow-2xl shadow-artesanal-orange/20 sm:px-10 lg:flex lg:items-center lg:justify-between lg:px-16">
+        <div>
+          <span class="text-sm font-bold uppercase tracking-[0.2em] text-white/75">Seu cuidado começa aqui</span>
+          <h2 class="mt-3 max-w-3xl font-display text-3xl font-extrabold sm:text-4xl">Envie sua receita e fale com a nossa equipe.</h2>
+        </div>
+        <a class="mt-7 inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-white px-7 py-4 font-bold text-artesanal-deep transition hover:-translate-y-1 hover:shadow-xl lg:mt-0" href="https://wa.me/553198094350?text=Ol%C3%A1%21%20Gostaria%20de%20enviar%20uma%20receita." target="_blank" rel="noopener noreferrer">Conversar no WhatsApp <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <section id="contato" class="section-space bg-white">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="reveal mx-auto mb-12 max-w-3xl text-center">
+          <span class="eyebrow">Contato e localização</span>
+          <h2 class="section-title">Estamos perto de você.</h2>
+          <p class="mt-4 text-lg text-slate-600">Visite nossa unidade em Primavera do Leste ou fale com a equipe.</p>
+        </div>
+        <div class="contact-wrap reveal grid overflow-hidden rounded-[2rem] lg:grid-cols-[0.9fr_1.1fr]">
+          <div class="bg-artesanal-deep p-7 text-white sm:p-10 lg:p-12">
+            <div class="mb-9 flex items-center gap-3">
+              <span class="brand-symbol brand-symbol-small" aria-hidden="true"><i></i><i></i><i></i></span>
+              <div><p class="text-xs uppercase tracking-[0.25em] text-white/60">Farmácia</p><p class="font-display text-xl font-extrabold">ARTESANAL</p></div>
+            </div>
+            <dl class="contact-list">
+              <div><dt>CNPJ</dt><dd>42.541.275/0001-82</dd></div>
+              <div><dt>Nome empresarial</dt><dd>Pva Manipulação de Fórmulas Farmacêuticas LTDA</dd></div>
+              <div><dt>Endereço</dt><dd>Rua Rondonópolis, 363<br>Quadra 027, Lote 0006<br>Cidade Primavera I</dd></div>
+              <div><dt>Cidade</dt><dd>Primavera do Leste - MT<br>CEP 78.850-000</dd></div>
+              <div><dt>Telefone</dt><dd><a href="tel:+553198094350">(31) 9809-4350</a></dd></div>
+              <div><dt>E-mail</dt><dd><a class="break-all" href="mailto:atendimento@mentorearassessoria.com.br">atendimento@mentorearassessoria.com.br</a></dd></div>
+            </dl>
+            <a class="mt-9 inline-flex items-center gap-2 rounded-full bg-artesanal-orange px-6 py-3.5 font-bold transition hover:-translate-y-1" href="https://wa.me/553198094350?text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer">Fale com nossa equipe <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="min-h-[500px] bg-slate-100 lg:min-h-full">
+            <iframe class="h-full min-h-[500px] w-full border-0" title="Localização da Farmácia Artesanal em Primavera do Leste" src="https://www.google.com/maps?q=Rua%20Rondon%C3%B3polis%2C%20363%2C%20Primavera%20do%20Leste%20-%20MT&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-[#003a37] px-6 py-10 text-white/70">
+    <div class="mx-auto flex max-w-7xl flex-col gap-6 border-b border-white/10 pb-8 md:flex-row md:items-center md:justify-between">
+      <a href="#inicio" class="flex items-center gap-3 text-white">
+        <span class="brand-symbol brand-symbol-small" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="font-display text-lg font-extrabold">FARMÁCIA ARTESANAL</span>
+      </a>
+      <nav class="flex flex-wrap gap-x-6 gap-y-3 text-sm" aria-label="Navegação do rodapé"><a href="#sobre">Sobre nós</a><a href="#servicos">Serviços</a><a href="#galeria">Galeria</a><a href="#contato">Contato</a><button id="openPrivacy" type="button">Política de Privacidade</button></nav>
+    </div>
+    <div class="mx-auto flex max-w-7xl flex-col gap-2 pt-7 text-sm md:flex-row md:items-center md:justify-between">
+      <p>© <span id="currentYear"></span> Pva Manipulação de Fórmulas Farmacêuticas LTDA.</p>
+      <p>CNPJ 42.541.275/0001-82</p>
+    </div>
+  </footer>
+
+  <a class="floating-whatsapp" href="https://wa.me/553198094350?text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20um%20pedido." target="_blank" rel="noopener noreferrer" aria-label="Falar pelo WhatsApp">
+    <svg class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
+
+  <div id="privacyModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="privacyTitle" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-panel" role="document">
+      <button class="modal-close" type="button" data-close-modal aria-label="Fechar política de privacidade">×</button>
+      <span class="eyebrow">Transparência</span>
+      <h2 id="privacyTitle" class="mt-3 font-display text-3xl font-extrabold text-artesanal-deep">Política de Privacidade</h2>
+      <div class="mt-6 max-h-[60vh] space-y-4 overflow-y-auto pr-3 leading-7 text-slate-600">
+        <p>Este é um site institucional da Pva Manipulação de Fórmulas Farmacêuticas LTDA e tem como finalidade apresentar informações sobre a empresa, seus serviços e formas de contato.</p>
+        <p>Não coletamos, armazenamos ou tratamos dados pessoais por meio de formulários neste site. Ao clicar nos links de telefone, e-mail, WhatsApp ou mapa, você será direcionado a serviços de terceiros, que possuem políticas de privacidade próprias.</p>
+        <p>Podem ser utilizados dados técnicos essenciais ao funcionamento e à segurança da página, como registros de acesso mantidos automaticamente pelo serviço de hospedagem, nos termos da legislação aplicável.</p>
+        <p>Não comercializamos ou compartilhamos dados pessoais para fins publicitários. Caso futuramente sejam incluídos recursos que realizem coleta de informações, esta política será atualizada e os usuários serão informados de forma adequada.</p>
+        <p>Para dúvidas relacionadas à privacidade, entre em contato pelo e-mail atendimento@mentorearassessoria.com.br.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="lightbox" class="modal lightbox" role="dialog" aria-modal="true" aria-label="Visualização da galeria" aria-hidden="true">
+    <div class="modal-backdrop" data-close-lightbox></div>
+    <button class="lightbox-close" type="button" data-close-lightbox aria-label="Fechar imagem">×</button>
+    <img id="lightboxImage" src="img/6.jpeg" alt="">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
